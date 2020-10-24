@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<style type="text/css">
+		body{
+			background-image:url(https://images.unsplash.com/photo-1585170236738-aadfce97f025?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1044&q=80);
+			background-size: cover;
+		}
+		*{
+			box-sizing: border-box;
+		}
+		h1{
+			margin-top: 0;
+			margin-bottom: 20px;
+			text-align: center;
+			font-weight: bold;
+			color: skyblue;
+
+		}
+		.wrapper{
+		    max-width: 450px;
+		    height: auto;
+		    background: black;
+		    padding: 60px 45px;
+		    color: white;
+		    position: absolute;
+		    top: 50%;
+		    left:50%;
+		    transform: translate(-50%,-50%);
+		    border-radius: 20px;
+		}
+		.input-field{
+			position: relative;
+			margin-bottom:10px;
+		}
+		.input{
+			width:100%;
+			padding:12px;
+			padding-left: 30px;
+			background-color: #eeeeee;
+			border:none;
+		}
+		.input-field i{
+			position: absolute;
+			top:10px;
+			left:10px;
+            color:skyblue;
+            font-size :14px;
+		}
+		.cal i{
+			top:10px;
+			left:10px;
+            color:skyblue;
+            font-size :14px
+		}
+		::placeholder{
+			color:black;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+	<form action="C:\Users\rohan\Desktop\HTML\Final Website\Home Page.html" target="_blank" method="POST">
+		<h1>Sign Up</h1>
+		<div class="input-field">
+			<i class="fas fa-user"></i>
+			<input type="text" placeholder="Name" required class="input">
+		</div>
+		<div class="input-field">
+			<i class="fas fa-envelope-square"></i>
+			<input type="email" placeholder="Email" required class="input">
+		</div>
+		<div class="input-field">
+			<i class="fas fa-lock"></i>
+			<input type="password" placeholder="Password" pattern=".{5,10}"
+			required title="Password must contain 5 to 10 characters" class="input">
+		</div>
+
+		<br>
+		<div class="cal">
+			<i class="far fa-calendar-alt"></i>
+            <label>Date of birth</label>
+            <input type="Date" name="date" required>
+			</select>
+		</div>
+		<br><br>
+		<div class="cal">
+		    <i class="fas fa-mars"></i>
+
+			<label>Male</label>
+			<input type="radio" name="Gender">
+
+			<i class="fas fa-venus"></i>
+			<label>Female</label>
+			<input type="radio" name="Gender">
+		</div>
+		<br>
+		<div>
+			<label>I agree to the terms & conditions</label>
+			<input type="checkbox" name="term" required>
+
+		</div>
+		<br>
+		<button style="color:white; background-color: skyblue; border-radius: 20px; width:50%; height:50%; margin:20px 60px 10px; text-align:center; padding: 12px; text-transform: uppercase; font-weight: 700; ">Sign Up</button>
+
+
+	</form>
+
+</div>
+
+</body>
+</html>
